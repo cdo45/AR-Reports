@@ -36,7 +36,7 @@ const cards: Array<{
     accent: "teal",
   },
   {
-    href: "#",
+    href: "/forecast",
     title: "Forecast",
     description:
       "Three-scenario collections forecast with weekly, monthly, and daily views.",
