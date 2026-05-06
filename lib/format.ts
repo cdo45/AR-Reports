@@ -129,3 +129,36 @@ export function heatReconcileDiff(
   if (abs > 1) return rgbCss(MID);
   return undefined;
 }
+
+/**
+ * Forecast block reconciliation cell color: green if |v| <= $1 (clean),
+ * yellow if |v| <= $10K, red if larger.
+ */
+export function heatForecastReconcile(
+  v: number | null | undefined
+): string | undefined {
+  if (v == null || !Number.isFinite(v)) return undefined;
+  const abs = Math.abs(v);
+  if (abs <= 1) return rgbCss(GOOD);
+  if (abs <= 10_000) return rgbCss(MID);
+  return rgbCss(BAD);
+}
+
+/**
+ * White → green gradient for forecast bucket amounts. `value` and `max`
+ * should be non-negative; ratio 0 → white, ratio 1 → vance-good. Returns
+ * undefined for null / non-positive values.
+ */
+export function heatWhiteToGreen(
+  value: number | null | undefined,
+  max: number
+): string | undefined {
+  if (value == null || !Number.isFinite(value)) return undefined;
+  if (max <= 0 || value <= 0) return undefined;
+  const t = Math.max(0, Math.min(1, value / max));
+  // Lerp from white (255,255,255) to GOOD.
+  const r = Math.round(255 + (GOOD[0] - 255) * t);
+  const g = Math.round(255 + (GOOD[1] - 255) * t);
+  const b = Math.round(255 + (GOOD[2] - 255) * t);
+  return `rgb(${r}, ${g}, ${b})`;
+}
