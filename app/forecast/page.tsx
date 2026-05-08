@@ -72,7 +72,7 @@ export default async function ForecastPage({
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <header className="bg-vance-navy text-white">
+      <header className="bg-brand-navy text-white">
         <div className="mx-auto max-w-[1400px] px-6 py-6">
           <div className="flex items-center justify-between">
             <div>
@@ -117,7 +117,7 @@ export default async function ForecastPage({
             <div className="text-xs uppercase tracking-wide text-gray-500">
               Total Open Balance
             </div>
-            <div className="mt-1 text-2xl font-bold text-vance-navy tabular-nums">
+            <div className="mt-1 text-2xl font-bold text-brand-navy tabular-nums">
               {fmtCurrency0(totalOpenBalance)}
             </div>
           </div>
@@ -125,7 +125,7 @@ export default async function ForecastPage({
             <div className="text-xs uppercase tracking-wide text-gray-500">
               Open Invoices
             </div>
-            <div className="mt-1 text-2xl font-bold text-vance-navy tabular-nums">
+            <div className="mt-1 text-2xl font-bold text-brand-navy tabular-nums">
               {fmtInt(openInvoiceCount)}
             </div>
           </div>
@@ -133,7 +133,7 @@ export default async function ForecastPage({
             <div className="text-xs uppercase tracking-wide text-gray-500">
               Customers w/ Open Balance
             </div>
-            <div className="mt-1 text-2xl font-bold text-vance-navy tabular-nums">
+            <div className="mt-1 text-2xl font-bold text-brand-navy tabular-nums">
               {fmtInt(customersWithOpen)}
             </div>
           </div>
@@ -141,7 +141,7 @@ export default async function ForecastPage({
             <div className="text-xs uppercase tracking-wide text-gray-500">
               Invoices Without Payment History
             </div>
-            <div className="mt-1 text-2xl font-bold text-vance-navy tabular-nums">
+            <div className="mt-1 text-2xl font-bold text-brand-navy tabular-nums">
               {fmtInt(invoicesWithoutHistory)}
             </div>
           </div>
@@ -175,7 +175,7 @@ export default async function ForecastPage({
 
         {/* Reconciliation block */}
         <div className="rounded border border-gray-200 bg-white shadow-sm">
-          <div className="border-b border-gray-100 bg-vance-navy rounded-t px-4 py-2 text-white">
+          <div className="border-b border-gray-100 bg-brand-navy rounded-t px-4 py-2 text-white">
             <h2 className="text-sm font-semibold">AR vs Aging Reconciliation</h2>
           </div>
           <table className="w-full text-sm">
@@ -221,7 +221,7 @@ export default async function ForecastPage({
 
         {/* Open invoice detail */}
         <div className="rounded border border-gray-200 bg-white shadow-sm">
-          <div className="border-b border-gray-100 bg-vance-navy rounded-t px-4 py-2 text-white">
+          <div className="border-b border-gray-100 bg-brand-navy rounded-t px-4 py-2 text-white">
             <h2 className="text-sm font-semibold">
               Open Invoice Detail ({fmtInt(openInvoiceCount)} invoices)
             </h2>

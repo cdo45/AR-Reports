@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 export default function UploadPage() {
   return (
     <main className="min-h-screen bg-gray-50">
-      <header className="bg-vance-navy text-white">
+      <header className="bg-brand-navy text-white">
         <div className="mx-auto max-w-6xl px-6 py-6">
           <Link href="/" className="text-xs text-gray-200 hover:underline">
             ← Home

@@ -93,7 +93,7 @@ function UploadSection({
     }
   };
 
-  const accentClass = accent === "navy" ? "bg-vance-navy" : "bg-vance-orange";
+  const accentClass = accent === "navy" ? "bg-brand-navy" : "bg-brand-orange";
 
   return (
     <section className="rounded border border-gray-200 bg-white shadow-sm">
