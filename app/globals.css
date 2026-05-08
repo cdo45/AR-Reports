@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --vance-navy: #1F4E78;
-  --vance-orange: #C65911;
-  --vance-good: #63BE7B;
-  --vance-mid: #FFEB84;
-  --vance-bad: #F8696B;
+  --brand-navy: #1F4E78;
+  --brand-orange: #C65911;
+  --brand-good: #63BE7B;
+  --brand-mid: #FFEB84;
+  --brand-bad: #F8696B;
 }
 
 html,

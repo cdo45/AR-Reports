@@ -10,7 +10,7 @@ export default async function CustomersPage() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <header className="bg-vance-navy text-white">
+      <header className="bg-brand-navy text-white">
         <div className="mx-auto max-w-[1400px] px-6 py-6">
           <div className="flex items-center justify-between">
             <div>

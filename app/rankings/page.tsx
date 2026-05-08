@@ -158,7 +158,7 @@ export default async function RankingsPage({
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <header className="bg-vance-navy text-white">
+      <header className="bg-brand-navy text-white">
         <div className="mx-auto max-w-[1400px] px-6 py-6">
           <div className="flex items-center justify-between">
             <div>
@@ -214,12 +214,12 @@ export default async function RankingsPage({
               defaultValue={min}
               min={1}
               step={1}
-              className="mt-1 w-32 rounded border border-gray-300 px-3 py-1.5 text-sm shadow-sm focus:border-vance-navy focus:outline-none focus:ring-1 focus:ring-vance-navy"
+              className="mt-1 w-32 rounded border border-gray-300 px-3 py-1.5 text-sm shadow-sm focus:border-brand-navy focus:outline-none focus:ring-1 focus:ring-brand-navy"
             />
           </div>
           <button
             type="submit"
-            className="rounded bg-vance-navy px-4 py-1.5 text-sm font-semibold text-white hover:opacity-90"
+            className="rounded bg-brand-navy px-4 py-1.5 text-sm font-semibold text-white hover:opacity-90"
           >
             Apply
           </button>
@@ -234,7 +234,7 @@ export default async function RankingsPage({
             title="Speed"
             subtitle="Lowest median days to pay"
             metricLabel="Median DTP"
-            headerClass="bg-vance-navy"
+            headerClass="bg-brand-navy"
             rows={speed}
           />
           <RankingCard
@@ -248,7 +248,7 @@ export default async function RankingsPage({
             title="Volume-Weighted"
             subtitle="lifetime billed ÷ (median DTP + 1)"
             metricLabel="Score"
-            headerClass="bg-vance-orange"
+            headerClass="bg-brand-orange"
             rows={volume}
           />
         </div>

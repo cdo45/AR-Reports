@@ -45,27 +45,27 @@ const cards: Array<{
 ];
 
 const accentClasses: Record<Accent, string> = {
-  navy: "border-t-4 border-vance-navy",
-  orange: "border-t-4 border-vance-orange",
-  good: "border-t-4 border-vance-good",
+  navy: "border-t-4 border-brand-navy",
+  orange: "border-t-4 border-brand-orange",
+  good: "border-t-4 border-brand-good",
   teal: "border-t-4 border-teal-700",
 };
 
 const titleClasses: Record<Accent, string> = {
-  navy: "text-vance-navy",
-  orange: "text-vance-orange",
-  good: "text-vance-good",
+  navy: "text-brand-navy",
+  orange: "text-brand-orange",
+  good: "text-brand-good",
   teal: "text-teal-700",
 };
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-gray-50">
-      <header className="bg-vance-navy text-white">
+      <header className="bg-brand-navy text-white">
         <div className="mx-auto max-w-6xl px-6 py-8">
-          <h1 className="text-3xl font-bold">Vance AR Analysis Tool</h1>
+          <h1 className="text-3xl font-bold">ConstructingOne AR Analysis Tool</h1>
           <p className="mt-2 text-sm text-gray-200">
-            Accounts Receivable analytics for Vance Corp.
+            Accounts Receivable analytics for ConstructingOne.
           </p>
         </div>
       </header>

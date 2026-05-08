@@ -31,8 +31,8 @@ function KpiCard({
 }) {
   const valueClass =
     size === "lg"
-      ? "text-3xl font-bold text-vance-navy"
-      : "text-xl font-semibold text-vance-navy";
+      ? "text-3xl font-bold text-brand-navy"
+      : "text-xl font-semibold text-brand-navy";
   const padClass = size === "lg" ? "p-5" : "p-4";
   return (
     <div className={`rounded border border-gray-200 bg-white shadow-sm ${padClass}`}>
@@ -67,7 +67,7 @@ export default async function DashboardPage() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <header className="bg-vance-navy text-white">
+      <header className="bg-brand-navy text-white">
         <div className="mx-auto max-w-[1400px] px-6 py-6">
           <div className="flex items-center justify-between">
             <div>
@@ -155,7 +155,7 @@ export default async function DashboardPage() {
 
         {/* Top 10 customers chart */}
         <div className="rounded border border-gray-200 bg-white shadow-sm">
-          <div className="border-b border-gray-100 bg-vance-navy rounded-t px-4 py-2 text-white">
+          <div className="border-b border-gray-100 bg-brand-navy rounded-t px-4 py-2 text-white">
             <h2 className="text-sm font-semibold">
               Top 10 Customers by Lifetime Billed
             </h2>
@@ -164,7 +164,7 @@ export default async function DashboardPage() {
             <TopCustomersChart rows={top10} />
             <p className="mt-2 text-right text-xs text-gray-500">
               Largest:{" "}
-              <span className="font-semibold text-vance-navy">
+              <span className="font-semibold text-brand-navy">
                 {top10[0]?.customer_name ?? "—"}
               </span>{" "}
               · {fmtCurrencyCompact(top10[0]?.lifetime_billed ?? 0)}
@@ -174,7 +174,7 @@ export default async function DashboardPage() {
 
         {/* Billed vs Collected by Year */}
         <div className="rounded border border-gray-200 bg-white shadow-sm">
-          <div className="border-b border-gray-100 bg-vance-navy rounded-t px-4 py-2 text-white">
+          <div className="border-b border-gray-100 bg-brand-navy rounded-t px-4 py-2 text-white">
             <h2 className="text-sm font-semibold">Billed vs Collected by Year</h2>
           </div>
           <div className="p-4">

@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        vance: {
+        brand: {
           navy: "#1F4E78",
           orange: "#C65911",
           good: "#63BE7B",
